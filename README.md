@@ -1,11 +1,10 @@
-# Crypto Liquidity Hunting Bot 🚀
+# Crypto Liquidity AI Trading Bot 🚀
 
-**AI-powered liquidity detection and algorithmic trading for crypto markets.**  
-Detect order book gaps, hidden walls, and liquidity sweeps across exchanges—then act on signals manually or via your own execution layer.
+**AI trading bot** for liquidity detection and algorithmic trading in crypto markets. Detect order book gaps, hidden walls, and liquidity sweeps across exchanges—then act on signals manually or via your own execution layer.
 
-[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/YourUsername/crypto-liquidity-hunting-bot)](https://github.com/YourUsername/crypto-liquidity-hunting-bot/stargazers)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/asonglin/crypto-liquidity-ai-trading-bot)](https://github.com/asonglin/crypto-liquidity-ai-trading-bot/stargazers)
 
-![Crypto Liquidity Hunting Bot](assets/image.png)
+![Crypto Liquidity AI Trading Bot](assets/image.png)
 
 <details>
 <summary><strong>📋 Table of contents</strong></summary>
@@ -56,7 +55,7 @@ If you are interested in **custom crypto trading bots** (liquidity, arbitrage, e
 
 **For collaboration or development work:**
 
-- **GitHub** — [Open an issue](https://github.com/YourUsername/crypto-liquidity-hunting-bot/issues)
+- **GitHub** — [Open an issue](https://github.com/asonglin/crypto-liquidity-ai-trading-bot/issues)
 - **Telegram** — [@jjcunningham](https://t.me/jjcunningham)
 - **Email** — jj.cunningham1129@gmail.com
 
@@ -144,7 +143,7 @@ The codebase separates **data** (`modules/`, exchange APIs), **analysis** (`trad
 Run the main app with Node:
 
 ```bash
-git clone https://github.com/YourUsername/crypto-liquidity-hunting-bot.git && cd crypto-liquidity-hunting-bot
+git clone https://github.com/asonglin/crypto-liquidity-ai-trading-bot.git && cd crypto-liquidity-ai-trading-bot
 npm install
 ```
 
@@ -190,8 +189,8 @@ Signals you can get: *stop-loss clusters*, *sudden order book vacuum*, *liquidit
 ## Installation
 
 ```bash
-git clone https://github.com/YourUsername/crypto-liquidity-hunting-bot.git
-cd crypto-liquidity-hunting-bot
+git clone https://github.com/asonglin/crypto-liquidity-ai-trading-bot.git
+cd crypto-liquidity-ai-trading-bot
 ```
 
 **Quick start (Node)** — main engine:
@@ -246,7 +245,7 @@ Extensible to any exchange with a REST/WS API. Commonly used with:
 ## Project layout
 
 ```
-crypto-liquidity-hunting-bot/
+crypto-liquidity-ai-trading-bot/
 ├── app.js                 # entry point
 ├── config.default.jsonc   # config template
 ├── package.json
@@ -272,14 +271,10 @@ crypto-liquidity-hunting-bot/
 
 ## Related projects
 
-Part of a broader ecosystem of crypto trading and signal tools:
+Part of the same AI trading bot suite:
 
-- [Funding Rate Arbitrage Bot](https://github.com/YourUsername/funding-rate-arbitrage-bot) — Perpetual funding rate arbitrage
-- [Whale Tracking AI](https://github.com/YourUsername/whale-tracking-crypto-bot) — Large wallet and smart-money monitoring
-- [Market Manipulation Detection Bot](https://github.com/YourUsername/market-manipulation-detection-bot) — Spoofing and manipulation detection
-- [Crypto Signal Engine](https://github.com/YourUsername/crypto-signal-engine-ai) — AI signal generation and copilot
-- [Crypto Market Liquidity AI](https://github.com/YourUsername/crypto-market-liquidity-ai) — ML market-wide liquidity analytics
-- [Liquidity Tracking AI Bot](https://github.com/YourUsername/liquidity-tracking-ai-bot) — Real-time DEX liquidity tracking
+- [Crypto Futures AI Trading Bot](https://github.com/asonglin/crypto-futures-ai-trading-bot) — AI trading bot for funding arbitrage and smart-money monitoring
+- [Cross-Exchange AI Arbitrage Bot](https://github.com/asonglin/cross-exchange-ai-arbitrage-bot) — AI trading bot for CEX/DEX spread detection and execution
 
 ---
 
