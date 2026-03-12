@@ -1,0 +1,182 @@
+{
+  /**
+    States if this config file is for development (not a production bot).
+    Config files 'config.dev.jsonc' and 'config.test.jsonc' considered as dev independent of this option.
+    You can also add 'dev' or 'test' command argument, or set env DEV=true.
+  **/
+  "dev": false,
+  
+  /**
+    The bot's secret passphrase. Create a separate ADM account for the bot.
+    Bot's ADM address will correspond to this passPhrase.
+  **/
+  "passPhrase": "distance expect praise frequent..",
+
+  /**
+    List of nodes to fetch transactions.
+    If one becomes unavailable, the bot will choose a live one.
+  **/
+  "node_ADM": [
+    "https://bid.adamant.im",
+    "http://localhost:36666",
+    "https://endless.adamant.im",
+    "https://clown.adamant.im",
+    "https://unusual.adamant.im",
+    "https://debate.adamant.im",
+    "http://23.226.231.225:36666",
+    "http://78.47.205.206:36666",
+    "https://lake.adamant.im",
+    "https://sunshine.adamant.im"
+  ],
+
+  /** Socket connection is recommended for better user experience **/
+  "socket": true,
+
+  /** Choose socket connection protocol, "ws" or "wss" depending on your server **/
+  "ws_type": "ws",
+
+  /** List of ADAMANT InfoServices for catching exchange rates **/
+  "infoservice": [
+    "https://info.adamant.im"
+  ],
+
+  /** ADAMANT accounts to accept commands from. Commands from other accounts will not be executed. **/
+  "admin_accounts": [
+    "U123.."
+  ],
+
+  /** Notify non-admins that they are not admins. If false, the bot will be silent. **/
+  "notify_non_admins": false,
+
+  /** List of supported exchanges **/
+  "exchanges": [
+    "P2PB2B",
+    "Azbit",
+    "StakeCube",
+    "Coinstore",
+    "FameEX",
+    "NonKYC",
+    "XeggeX"
+  ],
+
+  /** Exchange to work with. Case insensitive. **/
+  "exchange": "Azbit",
+
+  /** Pair to trade **/
+  "pair": "ADM/USDT",
+
+  /**
+    If an exchange doesn't publicly expose API for the pair, the bot can use private API.
+    Specific to exchange API implementation.
+  **/
+  "pair_hidden": false,
+
+  /**
+    Interval in minutes to clear all of the Unknown (which are not placed by the bot) opened orders.
+    Some exchanges have API issues with closing or matching orders.
+    Because of this, your account can accumulate open orders and lead to frozen balances.
+    In such a case, you can run the "/clear unk" command manually or set this parameter for automatic clearing.
+    Note: this command cancels all Unknown orders for the pair, including ones you placed on an exchange's website.
+    0 means disabled.
+  **/
+  "clearAllOrdersInterval": 0,
+
+  /** Exchange's custom restrictions to override `traderapi.features()`, if you have a special account **/
+  "exchange_restrictions": {
+    /** Max number of open orders. Set 'false' to skip **/
+    "orderNumberLimit": false,
+    /** If an exchange doesn't provide a minimum order amount value, the bot uses the DEFAULT_MIN_ORDER_AMOUNT_USD const. You can override it with any positive value. **/
+    "minOrderAmountUSD": false,
+    /** Same for the upper bound of the min order amount **/
+    "minOrderAmountUpperBoundUSD": false
+  },
+
+  /**
+    A short name which helps you to understand which exchange account you use.
+    Letters and digits only.
+  **/
+  "account": "acc1",
+
+  /** Exchange's account API key for connection **/
+  "apikey": "YOUR-KEY..",
+
+  /** Exchange's account API secret for connection **/
+  "apisecret": "YOUR-SECRET..",
+
+  /** Exchange's account trade password or memo (if required by exchange) **/
+  "apipassword": "YOUR-TRADE-PASS",
+
+  /** Override project name for notifications. Letters, digits, - and ~ only. By default, it's derived from a repository name, TradeBot-me. **/
+  "project_name": "",
+
+  /** Bot's name for notifications. Keep it empty if you want the default format ADM/USDT@Coinstore-acc1 TradeBot **/
+  "bot_name": "",
+
+  /** How to reply to user in-chat if the first unknown command is received. **/
+  "welcome_string": "Hi! 😊 I'm the {bot_name} trade and market-making bot. ℹ️ Learn more on https://marketmaking.app or type **/help**.",
+
+  /** ADAMANT addresses for notifications and monitoring. Optional. **/
+  "adamant_notify": [""],
+
+  /** ADAMANT addresses for priority notifications **/
+  "adamant_notify_priority": [],
+
+  /** Slack keys for notifications and monitoring. Optional. **/
+  "slack": ["https://hooks.slack.com/services/.."],
+
+  /** Slack keys for priority notifications **/
+  "slack_priority": [],
+
+  /** Discord keys for notifications and monitoring. Optional. **/
+  "discord_notify": ["https://discord.com/api/webhooks/..."],
+
+  /** Discord keys for priority notifications. Optional. **/
+  "discord_notify_priority": [],
+
+  /** If you don't want to receive "not enough balance" notifications, set this to "true" **/
+  "silent_mode": false,
+
+  /**
+    The software will use verbosity according to log_level.
+    It can be none < error < warn < info < log.
+  **/
+  "log_level": "log",
+
+  "api": {
+    /** Port to listen on. Set 'false' to disable **/
+    "port": false,
+
+    /**
+      Enables health API
+      Allows to check if a bot is running with http://ip:port/ping
+    **/
+    "health": false,
+
+    /**
+      Enables debug API
+      Do not set for live bots, use only for debugging.
+      Allows to get DB records like http://ip:port/db?tb=incomingTxsDb
+    **/
+    "debug": false
+  },
+
+  /**
+    Storage connection options for MongoDB.
+    https://mongodb.github.io/node-mongodb-native/6.5/interfaces/MongoClientOptions.html
+  **/
+  "db": {
+    "name": "tradebotdb",
+    "url": "mongodb://127.0.0.1:27017/",
+    "options": {
+      "serverSelectionTimeoutMS": 3000,
+      "serverApi": { // https://mongodb.github.io/node-mongodb-native/6.5/interfaces/ServerApi.html
+        "deprecationErrors": true,
+        "strict": true,
+        "version": "1"
+      }
+    }
+  },
+
+  /** Minimal amount of USDT to confirm buy/sell/fill commands **/
+  "amount_to_confirm_usd": 1000
+}
