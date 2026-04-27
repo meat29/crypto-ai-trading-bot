@@ -55,7 +55,7 @@ If you are interested in **custom crypto trading bots** (liquidity, arbitrage, e
 
 **For collaboration or development work:**
 
-- **Telegram** — [@jjcunningham](https://t.me/k02_xx)
+- **Telegram** — [@k02_xx](https://t.me/k02_xx)
 
 ---
 
