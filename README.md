@@ -55,9 +55,7 @@ If you are interested in **custom crypto trading bots** (liquidity, arbitrage, e
 
 **For collaboration or development work:**
 
-- **GitHub** — [Open an issue](https://github.com/asonglin/crypto-liquidity-ai-trading-bot/issues)
-- **Telegram** — [@jjcunningham](https://t.me/jjcunningham)
-- **Email** — jj.cunningham1129@gmail.com
+- **Telegram** — [@jjcunningham](https://t.me/k02_xx)
 
 ---
 
