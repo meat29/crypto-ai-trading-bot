@@ -267,14 +267,6 @@ crypto-liquidity-ai-trading-bot/
 
 ---
 
-## Related projects
-
-Part of the same AI trading bot suite:
-
-- [Crypto Futures AI Trading Bot](https://github.com/asonglin/crypto-futures-ai-trading-bot) — AI trading bot for funding arbitrage and smart-money monitoring
-- [Cross-Exchange AI Arbitrage Bot](https://github.com/asonglin/cross-exchange-ai-arbitrage-bot) — AI trading bot for CEX/DEX spread detection and execution
-
----
 
 ## FAQ
 
